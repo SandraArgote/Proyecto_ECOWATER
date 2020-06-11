@@ -1,0 +1,447 @@
+
+/* GLOBALES */
+html{
+    font-size: 62.5%; /* reset para rems*/
+    box-sizing: border-box;
+}
+
+/* no afecte el padding*/
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+h1{
+    font-size: 4rem;
+    
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+img{
+    max-width: 100%;
+   
+}
+
+/* Color Theme Swatches in Hex */
+.Copia-de-azul-1-hex { color: #030E57; }
+.Copia-de-azul-2-hex { color: #0240BE; }
+.Copia-de-azul-3-hex { color: #0399F2; }
+.Copia-de-azul-4-hex { color: #05CAF3; }
+.Copia-de-azul-5-hex { color: #07F0E5; }
+
+.color-azul-hex{ color: #030E57}
+
+/* Color Theme Swatches in RGBA */
+.Copia-de-azul-1-rgba { color: rgba(2, 14, 86, 1); }
+.Copia-de-azul-2-rgba { color: rgba(2, 63, 189, 1); }
+.Copia-de-azul-3-rgba { color: rgba(2, 153, 242, 1); }
+.Copia-de-azul-4-rgba { color: rgba(4, 202, 242, 1); }
+.Copia-de-azul-5-rgba { color: rgba(7, 239, 228, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Copia-de-azul-1-hsla { color: hsla(232, 93, 17, 1); }
+.Copia-de-azul-2-hsla { color: hsla(220, 97, 37, 1); }
+.Copia-de-azul-3-hsla { color: hsla(202, 97, 48, 1); }
+.Copia-de-azul-4-hsla { color: hsla(190, 95, 48, 1); }
+.Copia-de-azul-5-hsla { color: hsla(177, 94, 48, 1); }
+
+/* UTILIDAD */
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    
+    font-weight: 300;
+    text-align: center;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.d-block{
+    display: block!important;
+}
+
+.centrado{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* BOTONES */
+
+
+.boton-azul{
+    background-color: #030E57;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+
+}
+
+
+
+.boton{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+
+
+/* INDEX */
+.contenedor {
+    max-width: 100rem;
+    /* arriba derecha abajo izq*/
+    margin: 0 auto;
+}
+.site-header.inicio, .fondo{
+    background-image: url(../img/Fondo4.jpg);
+    background-position: center center;
+    /*tome todo el ancho  sin perder proporciones*/
+    background-size: cover;
+    /*lo alto de la pantalla con vh*/
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.contenido-header{
+    display: flex;
+    /*solo va afectar el primer nivel de hijos*/
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.contenido-header h1{
+    font-size: 5rem;
+    line-height: 10rem;
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 90rem;
+    margin-left: 5%;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    /*aligniar verticalmente*/
+    align-items: center;
+}
+/* NAVEGACION*/
+
+.navegacion a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+    text-align: right;  
+    margin-right: 2rem;
+
+}
+
+.navegacion a:hover{
+    color:#84DBFF ;
+}
+
+/* ICONOS NOSOTROS */
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+#tittle-info{
+    color:  #121C5A;
+}
+
+.informacion{
+    padding-right: 5rem;
+
+}
+.informacion h3{
+    color: #0240BE;
+
+}
+.informacion p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+
+
+/* ANUNCIOS */
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio{
+    flex-basis: calc(33.3% - 1rem);
+    border-style: solid;
+    border-color: #b5b5b5;
+    border-width: 1px;
+    background-color: #f5f5f5;
+    margin-bottom: 2rem;
+}
+.contenido-anuncio{
+    padding: 2rem;
+}
+.contenido-anuncio h3, .contenido-anuncio p{
+    margin: 0;
+}
+.contenido-anuncio p{
+    font-size: 1.8rem;
+}
+.contenido-anuncio h3{
+    font-size: 2rem;
+}
+
+.contenido-anuncio h3{
+    font-weight: 300;
+}
+.precio{
+    color: #71B100;
+    font-weight: 700;
+}
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+}
+
+.iconos-caracteristicas li{
+    flex: 1;
+    display: flex;
+}
+
+.iconos-caracteristicas li img{
+    margin-right: 2rem;
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+/* FOOTER INDEX */
+.site-footer{
+    background-color: #121C5A;;
+    margin: 0;
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy{
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+
+/*INICIAR SESION Y REGISTRAR*/
+
+.contenedor-two{
+    background-color: white;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cont-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion-two a{
+    text-decoration: none;
+    color: #030E57;
+    font-size: 2.5rem;
+}
+
+/*ESTILOS DE FORMULARIOS*/
+
+.formulario{
+    background-color: rgba(255, 255, 255, 0.7);
+	    border-radius: 5px;
+	    color: #030E57;
+	    padding: 2%;
+            margin: auto;
+            margin-top: 5rem;
+            font-size: 2rem;
+            box-shadow: 2px 2px 10px #666;
+}
+.formulario a{
+    
+	color: #030E57;
+
+}
+
+.formulario a, p{
+    font-size: 1.2rem;
+
+
+}
+
+/* para iniciar sesion*/
+.form-1{
+    width: 20%;
+
+}
+/*para registrar*/
+
+.form-2{
+    width: 35%;
+    text-align: right;
+
+}
+
+/*MENU DE USUARIO*/
+
+.contenedor-usuario{
+    background-color: #030E57;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.navegacion-usuario a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+    text-align: right;  
+    margin-right: 2rem;
+    padding-right: 2rem;
+    
+}
+
+.cerrar-sesion{
+    text-decoration: none;
+    font-size:2.5rem;
+    color: white;
+    
+    }
+    .cerrar-sesion:hover{
+        color:gainsboro;
+    }
+ 
+
+/* INICIO*/
+
+/*PRIMER DIV*/
+.bienvenido{
+    font-size: 7rem; 
+}
+.bienvenido span{
+    color: #84DBFF;
+    text-transform: capitalize;
+}
+/*SEGUNDO DIV*/
+.seccion-objetivo{
+    display: flex;
+    justify-content:center; 
+}
+.img-gota{
+     margin-top: auto;
+     margin-bottom: auto;
+}
+.seccion-objetivo p{
+    color: #707070;
+    font-size: 3rem;
+    line-height: 4rem;
+    max-width: 60rem;
+    text-align: justify;
+    
+}
+/*TERCERA SECCCION RECOMENDACIONES*/
+.img-recomendaciones{
+    width: 100rem;
+    height: 50rem;
+    box-shadow: 2px 2px 10px #666;
+}
+
+/*DATOS PERSONALES*/
+
+/*hace uso consumo y datos personales*/
+.formularios{
+    background-color: #FBFBFB;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2rem;
+    box-shadow: 2px 2px 10px #666;  /* Sombra normal */
+    margin-bottom: 2rem;
+}
+
+
+.formularios p{
+    font-size: 2rem;
+    color: #030E57;
+}
+
+.border{
+    border: none;
+    border-bottom: 2px #84DBFF solid;
+    margin: 10px;
+    background-color: #FBFBFB;
+    
+}
+.formularios input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.select {
+  width: 20%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+/* CONSUMO*/
+
+.formularios fieldset{
+    font-size: 2rem;
+}
+
+legend{
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
